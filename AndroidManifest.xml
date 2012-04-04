@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+	package="br.livro.android.cap4"
+	android:versionCode="1"
+	android:versionName="1.0.0">
+	<application android:icon="@drawable/icon" android:theme="@android:style/Theme.Light">
+
+		<!-- Necessário para o MapActivity -->
+		<uses-library android:name="com.google.android.maps" />
+
+		<activity android:name="Menu" android:label="Cap04-Activity">
+			<intent-filter>
+				<action android:name="android.intent.action.MAIN" />
+				<category android:name="android.intent.category.LAUNCHER" />
+			</intent-filter>
+		</activity>
+
+		<activity android:name=".activity.ExemploCicloVida" android:label="Ciclo de Vida" />
+
+		<activity android:name=".activity.ExemploCicloVidaAbrirTela">
+			<intent-filter>
+				<action android:name="android.intent.action.MAIN" />
+			</intent-filter>
+		</activity>
+		<activity android:name=".activity.Tela2" />
+		
+		<activity android:name=".activity.ExemploListaContatos1" android:label="ExemploListaContatos1" />
+		<activity android:name=".activity.ExemploListaContatos2" android:label="ExemploListaContatos2" />
+		<activity android:name=".activity.ExemploListActivity1" android:label="ExemploListActivity1" />
+		<activity android:name=".activity.ExemploListView" android:label="ExemploListView" />
+		<activity android:name=".activity.ExemploSimplesAdapter1" android:label="ExemploSimplesAdapter1" />
+		<activity android:name=".activity.ExemploSimplesAdapter2" android:label="ExemploSimplesAdapter2" />
+		<activity android:name=".activity.smile.ExemploSmileAdapter"
+			android:label="ExemploSmileAdapter" />
+		
+		<activity android:name=".activity.ExemploMapa" android:label="MapActivity" />
+		<activity android:name=".activity.ExemploMapaCristo" android:label="Cristo" />
+		<activity android:name=".activity.provider.ListActivityCursorCarros" android:label="Carros - Content Provider" />
+	</application>
+
+	<uses-permission android:name="android.permission.READ_CONTACTS" />
+	<uses-permission android:name="android.permission.CALL_PHONE" />
+	<uses-permission android:name="android.permission.INTERNET" />
+
+	<uses-sdk android:minSdkVersion="2" />
+</manifest>
